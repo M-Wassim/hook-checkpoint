@@ -23,15 +23,15 @@ return(
 
           <h1 style={{textAlign:'center'}}>
              {
-                stararray.map((el,i)=><a  href=""  onClick={(e)=>{e.preventDefault()
+                stararray.map((el,i)=><a  href=""  onClick={(e)=>{e.preventDefault()  
                setStar(i+1)}} 
                onDoubleClick={()=>setStar(0)}>{el}</a>)
              }
           </h1>
    
 
-<div className="row">
-<CardGroup>
+<div className="row" >
+<CardGroup >
   
     
    {searching(search,star).map((el,i)=> <MovieCard el={el} key={i}/> )}
